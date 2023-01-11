@@ -1,0 +1,27 @@
+Arguments: 
+  F:\Nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add lodash-es
+
+PATH: 
+  F:\VMware16\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\;F:\Nodejs\;C:\Users\admin\Desktop\新建文件夹\代码学习\webpack\demo1\node_modules\.bin\;;C:\Prog;am Files (x86)\NVIDIA Corporation\PhysX\Common;F:\微信web开发者工具\dll;;;F:\Git\cmd;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;F:\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.cnpmjs.org
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
