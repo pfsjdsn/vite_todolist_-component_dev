@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Input, Button } from "antd";
 import { STATUS } from '../../config/status'
+import { CloseCircleTwoTone } from '@ant-design/icons'
 // const todoItem = {
 //     id: 123,
 //     // 文本内容
@@ -22,17 +23,23 @@ const ToDoItem = (props) => {
         })
     }
 
-
-
     const handleSubmit = () => {
-        onSubmit && onSubmit(todoItem)
+        if (todoItem.content) { onSubmit && onSubmit(todoItem) }
+        else { alert('请输入内容！') }
 
+    }
+
+    const handleClear = () => {
+        setTodoItem({
+            content: '',
+        })
     }
 
     return (
         <div className="todo-item-input">
             {/* onPressEnter 回车事件 */}
-            < Input value={todoItem.content} onPressEnter={handleSubmit} onChange={handleChange} />
+            <Input value={todoItem.content} onPressEnter={handleSubmit} onChange={handleChange} />
+            <CloseCircleTwoTone onClick={handleClear} className='todo-item-clear-icon' />
             <Button size="large" type="primary" onClick={handleSubmit}>提交</Button>
         </div>
     )
