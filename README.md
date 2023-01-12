@@ -5,7 +5,7 @@ vite todolist 组件开发
 
 项目技术栈：
 
-vite + react +  ant design 
+vite + react + reack hooks +  ant design 
 
 vite文档：https://cn.vitejs.dev/guide/
 
