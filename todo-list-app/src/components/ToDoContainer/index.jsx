@@ -17,7 +17,7 @@ const ToDoContainer = (props) => {
             case 'is-done':
                 onOperate && onOperate({
                     ...item,
-                    status: STATUS.IS_DONE
+                    status: item.status === STATUS.IS_DONE ? STATUS.IS_CREATE : STATUS.IS_DONE
                 })
                 break;
             default:
@@ -25,13 +25,17 @@ const ToDoContainer = (props) => {
         }
     }
 
+    const showTodos = todos.filter(todo => {
+        return todo.status !== STATUS.IS_DELETE
+    })
+
     return (
         <div className="todo-container">
             <List
-                dataSource={todos}
+                dataSource={showTodos}
                 renderItem={
                     todo => (
-                        <List.Item className="todo-container-list">
+                        <List.Item className={todo.status === STATUS.IS_DONE ? "todo-container-list-done" : "todo-container-list"}>
                             {todo.content}
                             <div className="todo-item-operate">
                                 <CloseCircleTwoTone onClick={() => handleOperate("is-delete", todo)} />
@@ -42,7 +46,7 @@ const ToDoContainer = (props) => {
                 }
             />
 
-        </div>
+        </div >
     )
 }
 
