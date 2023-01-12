@@ -49,3 +49,9 @@ import 'antd/dist/antd.css';
 
 
 
+ant-design 图标安装
+
+```js
+ yarn add @ant-design/icons -S
+```
+
