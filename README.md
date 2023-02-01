@@ -1,11 +1,7 @@
-# vite_todolist_component_dev
-vite todolist 组件开发
-
+# 待办清单
 项目地址：https://sprightly-longma-8b2ef3.netlify.app
 
-项目技术栈：
-
-vite + react + reack hooks +  ant design 
+项目技术栈：React + React Hooks + Vite + Ant-Design
 
 vite文档：https://cn.vitejs.dev/guide/
 
